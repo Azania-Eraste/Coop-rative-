@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food chap chap</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="main.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="" alt="food_chap_chap">
+            <nav id="Header_Block">
+                <ul>
+                    <li><a href="#presentation">presentation</a></li>
+                    <li><a href="#mysterie">Plat Mistère</a></li>
+                    <li><a href="#Menu">Menu du jour</a></li>
+                    <li><a href="#dish-collection">les plats</a></li>
+                </ul>
+            </nav>
+            <div id="hamburger-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+        <div id="Header_Menu">
+            <a href="#presentation"><button class="button-nav">presentation</button></a>
+            <a href="#mysterie"><button class="button-nav">Plat Mistère</button></a>
+            <a href="#Menu"><button class="button-nav">Menu du jour</button></a>
+            <a href="#dish-collection"><button class="button-nav">les plats</button></a>
+        </div>
+    </header>
+    <Section>
+        <article id="presentation">
+            <h2 id="presentation_Title">La vraie cuisine<br>africo-européene</h2>
+            <p>Découvrez un mariage de saveur occidentale et africainne</p>
+            <a href="#dish-collection"><button>Commander</button></a>
+        </article>
+    </Section>
+    <section>
+        <div id="mysterie">
+            <div id="mysterie_presentation">
+                <h2>Le Plat<br>Mistère ?</h2>
+                <p>Un plat pris au hasard dans le menu du jour</p>
+                <button class="Btn_Commande">Commander</button>
+            </div>
+            <div id="mysterie_Logo">
+                <h1>?</h1>
+            </div>
+        </div>
+    </section>
+    <section>
+        <article id="Menu">
+            <h1>Menu du jour</h1>
+            <div class="Menu-Section">
+                <article id="Menu1">
+                    <h4>Dejeuner</h4>
+                    <h6>Entrée</h6>
+                    <div class="Menu_Item">
+                        <p>Crudité</p>
+                        <p>500Fcfa</p>
+                    </div>
+                    <div class="Menu_Item">
+                        <p>Crudité</p>
+                        <p>500Fcfa</p>
+                    </div>
+                    <h6>Plat</h6>
+                    <div class="Menu_Item">
+                        <p>Poulet</p>
+                        <p>1500Fcfa</p>
+                    </div>
+                    <div class="Menu_Item">
+                        <p>Poulet</p>
+                        <p>1500Fcfa</p>
+                    </div>
+                    <h6>Dessert</h6>
+                    <div class="Menu_Item">
+                        <p>Cake</p>
+                        <p>1500Fcfa</p>
+                    </div>
+                    <div class="Menu_Item">
+                        <p>Cake</p>
+                        <p>1500Fcfa</p>
+                    </div>
+                    <h6>Boisson</h6>
+                    <div class="Menu_Item">
+                        <p>Bissap</p>
+                        <p>500Fcfa</p>
+                    </div>
+                    <div class="Menu_Item">
+                        <p>Bissap</p>
+                        <p>500Fcfa</p>
+                    </div>
+                </article>
+                <hr>
+                <article id="Menu2">
+                    <h4>Diner</h4>
+                    <h6>Entrée</h6>
+                    <div class="Menu_Item">
+                        <p>Crudité</p>
+                        <p>500Fcfa</p>
+                    </div>
+                    <div class="Menu_Item">
+                        <p>Crudité</p>
+                        <p>500Fcfa</p>
+                    </div>
+                    <h6>Plat</h6>
+                    <div class="Menu_Item">
+                        <p>Poulet</p>
+                        <p>1500Fcfa</p>
+                    </div>
+                    <div class="Menu_Item">
+                        <p>Poulet</p>
+                        <p>1500Fcfa</p>
+                    </div>
+                    <h6>Dessert</h6>
+                    <div class="Menu_Item">
+                        <p>Cake</p>
+                        <p>1500Fcfa</p>
+                    </div>
+                    <div class="Menu_Item">
+                        <p>Cake</p>
+                        <p>1500Fcfa</p>
+                    </div>
+                    <h6>Boisson</h6>
+                    <div class="Menu_Item">
+                        <p>Bissap</p>
+                        <p>500Fcfa</p>
+                    </div>
+                    <div class="Menu_Item">
+                        <p>Bissap</p>
+                        <p>500Fcfa</p>
+                    </div>
+                </article>
+            </div>
+        </article>
+    </section>
+    <section>
+        <div id="dish-collection">
+            <div class="container_btn">
+                <button id="Entrée" class="button-trie" onclick="Button_selected('Entrée')"><div class="ilogo"></div> <p>Entrée</p></button>
+                <button id="Plat" class="button-trie" onclick="Button_selected('Plat')"><div class="ilogo"></div><p>Plat</p></button>
+                <button id="Dessert" class="button-trie" onclick="Button_selected('Dessert')"><div class="ilogo"></div><p>Dessert</p></button>
+                <button id="Boisson" class="button-trie" onclick="Button_selected('Boisson')"><div class="ilogo"></div><p>Boisson</p></button>
+                <button id="Grillard" class="button-trie selected" onclick="Button_selected('Grillard')"><div class="ilogo"></div><p>Grillarde</p></button>
+                <button id="A_16h" class="button-trie" onclick="Button_selected('A_16h')"><div class="ilogo"></div><p>A 16h</p></button>
+            </div>
+            <div id="grid">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <h1>Contact</h1>
+            <h3>FAQ</h3>
+            <h3>Email</h3>
+            <h3>Numéro</h3>
+        </div>
+    </footer>
+    <div id="customAlert" class="custom-alert">
+        <div class="custom-alert-content">  
+            <span id="closeAlert" class="close">&times;</span>
+            <div id="block">
+                
+            </div>                                      
+        </div>
+    </div>
+</body>
+</html>
